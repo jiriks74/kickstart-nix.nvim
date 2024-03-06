@@ -99,6 +99,7 @@ vim.diagnostic.config {
 
 g.editorconfig = true
 
+cmd[[colorscheme tokyonight]]
 vim.opt.colorcolumn = '100'
 
 -- Native plugins
