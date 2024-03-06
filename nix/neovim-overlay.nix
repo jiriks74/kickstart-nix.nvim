@@ -46,6 +46,7 @@ with final.pkgs.lib; let
     cmp-cmdline-history # cmp command line history suggestions
     copilot-lua # Github Copilot https://github.com/zbirenbaum/copilot.lua/
     copilot-cmp # Add Copilot as a cmp source # https://github.com/zbirenbaum/copilot-cmp/
+    # nvim-lspconfig
     # ^ nvim-cmp extensions
 
     # git integration plugins
@@ -99,6 +100,7 @@ with final.pkgs.lib; let
   extraPackages = with pkgs; [
     # language servers, etc.
     clang-tools
+    asm-lsp # Assembly language server
     lua-language-server
     nil # nix LSP
     nodejs_20
