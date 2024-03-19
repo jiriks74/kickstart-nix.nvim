@@ -98,9 +98,13 @@ with final.pkgs.lib; let
   ];
 
   extraPackages = with pkgs; [
+    # Dependencies
+    ripgrep
+
     # language servers, etc.
-    clang-tools
     asm-lsp # Assembly language server
+    clang-tools # C/C++ language server
+    nodePackages.bash-language-server # Bash language server
     lua-language-server
     nil # nix LSP
     nodejs_20
