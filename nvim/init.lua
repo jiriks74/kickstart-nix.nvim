@@ -6,6 +6,7 @@ local g = vim.g
 -- <leader> key. Defaults to `\`. Some people prefer space.
 g.mapleader = ' '
 -- g.maplocalleader = ' '
+vim.opt.wrap = false
 
 opt.compatible = false
 
@@ -26,6 +27,8 @@ opt.lazyredraw = true
 opt.showmatch = true -- Highlight matching parentheses, etc
 opt.incsearch = true
 opt.hlsearch = true
+opt.ignorecase = true -- Make search case insensitive
+opt.smartcase = true -- Overrides ignorecase if your pattern contains mixed case
 
 opt.spell = true
 opt.spelllang = 'en'
@@ -100,7 +103,7 @@ vim.diagnostic.config {
 g.editorconfig = true
 
 cmd[[colorscheme tokyonight]]
-vim.opt.colorcolumn = '100'
+vim.opt.colorcolumn = '80,100'
 
 -- Native plugins
 cmd.filetype('plugin', 'indent', 'on')
